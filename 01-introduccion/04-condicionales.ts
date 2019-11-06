@@ -61,13 +61,6 @@ if(casadoYMosero){
 
 
 */
-
-
-
-
-
-
-
 // apago la primera alarma me hago 
 // bolita y lloro hasta la segunda 
 // alarma y me levanto
@@ -77,4 +70,120 @@ if(casadoYMosero){
 // estaActivadaLaAlarma != true
 // estaEnModoSilencio == true
 // const seAtrasoAClase = celularDescargado == true  || celularDañado == true|| amaneceMuerto == true || estaActivadaLaAlarma != true || estaEnModoSilencio == true
+
+
+
+// TRUTY
+const nombreVacio = "";
+if(""){
+    console.log("Truty"); // Truty
+}else{
+    console.log("Falsy");
+}
+
+if("abc"){
+    console.log("Truty"); // Truty
+}else{
+    console.log("Falsy");
+}
+
+if(-1){
+    console.log("Truty"); // Truty
+}else{
+    console.log("Falsy");
+}
+
+if(1){
+    console.log("Truty"); // Truty
+}else{
+    console.log("Falsy");
+}
+
+if(1.3232){
+    console.log("Truty"); // Truty
+}else{
+    console.log("Falsy");
+}
+
+if(0){
+    console.log("Truty"); 
+}else{
+    console.log("Falsy"); // Falsy
+}
+
+if(null){
+    console.log("Truty"); 
+}else{
+    console.log("Falsy"); // Falsy
+}
+
+if(undefined){
+    console.log("Truty"); 
+}else{
+    console.log("Falsy"); // Falsy
+}
+const calculo = "sumar"; // sumar restar multiplicar dividir
+switch(calculo) {
+    case "sumar": // 1
+        // Codigo
+        break;
+    case "restar": // 2
+        // Codigo
+        break;
+    case "multiplicar":  //3
+        // Codigo
+        break;
+    case "dividir": //4
+        // Codigo        
+        break;
+    default:
+}
+
+// 6 Guagua
+// 18 Guambra
+// 65 Longo
+// 66 Ruku
+
+
+
+
+// FALSY
+
+
+
+
+
+const edadString = prompt("Ingresar numero");
+const edad = Number(edadString); // sumar restar multiplicar dividir
+
+
+const a = 2;
+const A = 2;
+const papito = "";
+const papitO = "";
+
+
+
+
+
+switch(edad) {
+    case 1: // 1
+        console.log("Guagua");
+        break;
+    case "restar": // 2
+        // Codigo
+        break;
+    case "multiplicar":  //3
+        // Codigo
+        break;
+    case "dividir": //4
+        // Codigo        
+        break;
+    default:
+}
+
+
+
+
+
 
