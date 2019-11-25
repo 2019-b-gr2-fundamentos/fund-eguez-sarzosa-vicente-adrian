@@ -71,10 +71,37 @@ const arreglo = [];
 
 
 Math.floor(Math.random() * 2) // [0 , 2[
-Math.floor(Math.random() * 10) // [0 , 11[
+Math.floor(Math.random() * 10) // [0 , 10[
 
 // FOR 
 // 1) let tamanio = arregloNumeros.length // 5
 // 2) tamanio > 0
 // 3) --
+
+
+
+
+
+
+/* 
+
+
+1) Definir # jugadores
+2) Asignar randomicamente si tiene 
+   o no un floron
+3) Verificar si al menos existe un floron
+4) Adivinar donde esta el floron
+
+*/
+
+
+
+
+
+
+
+
+
+
+
 
