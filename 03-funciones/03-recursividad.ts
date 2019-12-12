@@ -81,9 +81,21 @@ const unaDimension =
 
 
 
+// Escriba un programa que verifique si dos matrices son 
+// iguales ( La matriz es de dos dimensiones n * m)
+// "n" y "m" pueden ser iguales o distintas.
+/**
+  n = 2 , m = 3
+  1 2 3     2 3 4  
+  4 5 6     4 5 6
 
+ */
+// Sumar todas las filas y todas las columnas
 
-
-
-
-
+function compararMatriz(
+    matrizUno: number[][],
+    matrizDos: number[][]
+): boolean {
+ return true;
+}
+compararMatriz([[2,3],[3,4]],[[2,3],[3,4]]) // true
