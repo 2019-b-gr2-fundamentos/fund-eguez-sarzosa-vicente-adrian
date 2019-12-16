@@ -92,10 +92,13 @@ const unaDimension =
  */
 // Sumar todas las filas y todas las columnas
 
-function compararMatriz(
-    matrizUno: number[][],
-    matrizDos: number[][]
-): boolean {
- return true;
-}
+
+
+
+
+
+
+
+
+
 compararMatriz([[2,3],[3,4]],[[2,3],[3,4]]) // true
