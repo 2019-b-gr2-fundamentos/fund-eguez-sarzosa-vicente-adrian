@@ -1,10 +1,10 @@
 const arregloMatriz = [
     [1,2],
     [3,4,5],
-    [6,7,8],
+    [6,7,8,6],
     [9],
-    1
-]
+    [],
+];
 
 
 
@@ -27,7 +27,24 @@ function obtenerPrimeraDimension(matrizUno: number[][]): number | false{
 }
 
 function obtenerSegundaDimension(matrizUno: number[][]): number | false{
-    
+    const esValido = verificarTodosLosElementosDeUnArregloSonArreglo(matrizUno);
+    let longitudActualMaxima = 0; // Auxiliar
+    let longitudActualMinima = -1; // Auxiliar
+    for(let i = 0; i < matrizUno.length; i++){
+        const elementoActual = matrizUno[i]; // arreglo
+        const longitudActual = elementoActual.length; // segunda dimension
+        if(longitudActualMaxima < longitudActual){
+            longitudActualMaxima = longitudActual;
+        }
+        if(longitudActualMinima == -1) {
+            longitudActualMinima = longitudActual;
+        }else{
+            if(longitudActual < longitudActualMinima){
+                
+            }
+        }
+    }
+    return false;
 }
 
 function verificarTodosLosElementosDeUnArregloSonArreglo(
