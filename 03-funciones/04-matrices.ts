@@ -98,3 +98,5 @@ function main(){
     ];
     compararMatriz(x, y);
 }
+
+main();
