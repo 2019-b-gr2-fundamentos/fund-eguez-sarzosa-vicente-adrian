@@ -27,7 +27,7 @@ function compararMatriz(
     console.log(matrizUnoPrimeraDimension);
     console.log(matrizUnoSegundaDimension);
     console.log(matrizDosPrimeraDimension);
-    console.log(matrizDosPrimeraDimension);
+    console.log(matrizDosSegundaDimension);
  return true;
 }
 
