@@ -28,10 +28,11 @@ function compararMatriz(
     console.log(matrizUnoSegundaDimension);
     console.log(matrizDosPrimeraDimension);
     console.log(matrizDosSegundaDimension);
+    
  return true;
 }
 
-function obtenerPrimeraDimension(matrizUno: number[][]): number | false{
+function obtenerPrimeraDimension(matrizUno: number[][]): number | boolean{
     // VALIDACIONES
     const esValido = verificarTodosLosElementosDeUnArregloSonArreglo(matrizUno);
     if(esValido){
@@ -42,7 +43,7 @@ function obtenerPrimeraDimension(matrizUno: number[][]): number | false{
     }
 }
 
-function obtenerSegundaDimension(matrizUno: number[][]): number | false{
+function obtenerSegundaDimension(matrizUno: number[][]): number | boolean{
     const esValido = verificarTodosLosElementosDeUnArregloSonArreglo(matrizUno);
     if(esValido){
         let longitudActualMaxima = 0; // Auxiliar
@@ -57,7 +58,7 @@ function obtenerSegundaDimension(matrizUno: number[][]): number | false{
                 longitudActualMinima = longitudActual;
             }else{
                 if(longitudActual < longitudActualMinima){
-                    
+                    longitudActualMinima = longitudActual;
                 }
             }
         }
@@ -87,13 +88,13 @@ function verificarTodosLosElementosDeUnArregloSonArreglo(
 
 
 function main(){
-    const matrizUno = [
+    const x = [
         [1,2],
         [3]
     ];
-    const matrizDos = [
+    const y = [
         [1,2],
         [3,4],
     ];
-    compararMatriz(matrizUno, matrizDos);
+    compararMatriz(x, y);
 }
