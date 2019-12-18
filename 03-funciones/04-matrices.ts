@@ -24,6 +24,10 @@ function compararMatriz(
     const matrizDosSegundaDimension = obtenerSegundaDimension(
         matrizDos
         );
+    console.log(matrizUnoPrimeraDimension);
+    console.log(matrizUnoSegundaDimension);
+    console.log(matrizDosPrimeraDimension);
+    console.log(matrizDosPrimeraDimension);
  return true;
 }
 
