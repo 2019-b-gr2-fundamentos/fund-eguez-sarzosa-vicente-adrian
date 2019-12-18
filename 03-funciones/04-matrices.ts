@@ -12,6 +12,18 @@ function compararMatriz(
     matrizUno: number[][],
     matrizDos: number[][]
 ): boolean {
+    const matrizUnoPrimeraDimension = obtenerPrimeraDimension(
+        matrizUno
+        );
+    const matrizUnoSegundaDimension = obtenerSegundaDimension(
+        matrizUno
+        );
+    const matrizDosPrimeraDimension = obtenerPrimeraDimension(
+        matrizDos
+        );
+    const matrizDosSegundaDimension = obtenerSegundaDimension(
+        matrizDos
+        );
  return true;
 }
 
@@ -28,23 +40,31 @@ function obtenerPrimeraDimension(matrizUno: number[][]): number | false{
 
 function obtenerSegundaDimension(matrizUno: number[][]): number | false{
     const esValido = verificarTodosLosElementosDeUnArregloSonArreglo(matrizUno);
-    let longitudActualMaxima = 0; // Auxiliar
-    let longitudActualMinima = -1; // Auxiliar
-    for(let i = 0; i < matrizUno.length; i++){
-        const elementoActual = matrizUno[i]; // arreglo
-        const longitudActual = elementoActual.length; // segunda dimension
-        if(longitudActualMaxima < longitudActual){
-            longitudActualMaxima = longitudActual;
-        }
-        if(longitudActualMinima == -1) {
-            longitudActualMinima = longitudActual;
-        }else{
-            if(longitudActual < longitudActualMinima){
-                
+    if(esValido){
+        let longitudActualMaxima = 0; // Auxiliar
+        let longitudActualMinima = -1; // Auxiliar
+        for(let i = 0; i < matrizUno.length; i++){
+            const elementoActual = matrizUno[i]; // arreglo
+            const longitudActual = elementoActual.length; // segunda dimension
+            if(longitudActualMaxima < longitudActual){
+                longitudActualMaxima = longitudActual;
+            }
+            if(longitudActualMinima == -1) {
+                longitudActualMinima = longitudActual;
+            }else{
+                if(longitudActual < longitudActualMinima){
+                    
+                }
             }
         }
+        if(longitudActualMaxima != longitudActualMinima){
+            return false;
+        }else{
+            return matrizUno[0].length;
+        }
+    }else{
+        return false;
     }
-    return false;
 }
 
 function verificarTodosLosElementosDeUnArregloSonArreglo(
@@ -63,5 +83,13 @@ function verificarTodosLosElementosDeUnArregloSonArreglo(
 
 
 function main(){
-    // compararMatriz()
+    const matrizUno = [
+        [1,2],
+        [3]
+    ];
+    const matrizDos = [
+        [1,2],
+        [3,4],
+    ];
+    compararMatriz(matrizUno, matrizDos);
 }
