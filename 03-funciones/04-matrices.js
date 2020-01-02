@@ -9,11 +9,26 @@ function compararMatriz(matrizUno, matrizDos) {
     var esValido = tienenMatricesIgualesDimensiones(matrizUno, matrizDos);
     if (esValido) {
         // Comparar los valores
-        return true;
+        return tienenMismosValores(matrizUno, matrizDos); // boolean
     }
     else {
         return false;
     }
+}
+function tienenMismosValores(matrizUno, matrizDos) {
+    var primeraDimension = matrizUno.length;
+    var segundaDimension = matrizUno[0].length;
+    var banderaSonIguales = true;
+    for (var i = 0; i < primeraDimension; i++) {
+        for (var j = 0; j < segundaDimension; j++) {
+            var valorActualM1 = matrizUno[i][j];
+            var valorActualM2 = matrizDos[i][j];
+            if (valorActualM1 != valorActualM2) {
+                banderaSonIguales = false;
+            }
+        }
+    }
+    return banderaSonIguales;
 }
 function tienenMatricesIgualesDimensiones(matrizUno, matrizDos) {
     var matrizUnoPrimeraDimension = obtenerPrimeraDimension(matrizUno);
@@ -98,7 +113,7 @@ function main() {
     ];
     var y = [
         [1, 2, 3],
-        [3, 4, 4],
+        [3, 1, 3]
     ];
     var resultado = compararMatriz(x, y);
     console.log('Resultado: ', resultado);

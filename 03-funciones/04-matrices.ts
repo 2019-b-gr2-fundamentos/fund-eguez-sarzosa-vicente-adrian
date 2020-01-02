@@ -21,7 +21,7 @@ function compararMatriz(
         return tienenMismosValores(
             matrizUno,
             matrizDos
-        );
+        ); // boolean
     } else {
         return false;
     }
@@ -142,7 +142,7 @@ function main(){
     ];
     const y = [
         [1,2,3],
-        [3,4,4],
+        [3,3,3]
     ];
     const resultado = compararMatriz(x, y);
     console.log('Resultado: ', resultado);
