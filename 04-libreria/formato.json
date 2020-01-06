@@ -1,0 +1,16 @@
+{
+    "nombre":"Adrian",
+    "apellido":"Eguez",
+    "edad": 30,
+    "casado": false,
+    "hijos": null,
+    "mascotas": ["Cachetes"],
+    "primo": {
+        "nombre":"Pancho",
+        "apellido":"Eguez",
+        "edad": 27,
+        "casado": false,
+        "hijos": null,
+        "mascotas": []
+    }
+}
