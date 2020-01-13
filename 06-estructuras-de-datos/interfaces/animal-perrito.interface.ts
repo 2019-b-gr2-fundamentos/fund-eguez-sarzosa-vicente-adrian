@@ -1,4 +1,5 @@
 import { Duenio } from './duenio.interface';
+// ./ -> Relativo a donde esta el archivo 
 
 export interface AnimalPerrito { // interface -> (Struct)
     nombreCientifico: string;

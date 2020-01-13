@@ -1,4 +1,5 @@
 import {AnimalPerrito} from './interfaces/animal-perrito.interface'
+import { Duenio } from './interfaces/duenio.interface';
 
 // boolean
 // string
@@ -37,17 +38,26 @@ console.log(poliPerro.nombre); // Canis Lupus Familiaris
 const poliPerroAmarillo: AnimalPerrito = {
     nombreCientifico: 'Canis Lupus Familiaris',
     nombre: 'Amarillo',
-    clan: null // A cualquier propiedad de la Struct 
+    clan: null, // A cualquier propiedad de la Struct 
                // se puede poner "null"
-    // edad: 4,
-    // hijos: null,
-    // perritas: [],
-    // vacunado: false,
 }
-poliPerroAmarillo
+const duenioPoliPerroAmarillo: Duenio = {
+    nombres: 'Adrian',
+    apellidos: '',
+    fechaNacimiento: 2,
+    mascotasPerros: [ poliPerroAmarillo ]
+}
 
+// Guardar datos en una estructura de datos
+poliPerroAmarillo.duenio = duenioPoliPerroAmarillo;
+poliPerroAmarillo.edad = 4;
+poliPerroAmarillo.vacunado = true;
 
-
+// Acceder a los datos de una estructura de datos
+console.log(poliPerroAmarillo.duenio.nombres);
+console.log(poliPerroAmarillo.duenio.apellidos);
+console.log(poliPerroAmarillo.nombre);
+console.log(poliPerroAmarillo.edad);
 
 
 
