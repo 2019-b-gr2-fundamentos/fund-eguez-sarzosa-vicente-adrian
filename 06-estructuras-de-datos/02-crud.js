@@ -52,27 +52,32 @@ function main() {
 }
 function obtenerDatosAnimalPerritoSincrono() {
     return __awaiter(this, void 0, void 0, function () {
-        var edad, nombre;
+        var preguntas, respuestaEdad;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     console.log('Inicio');
-                    return [4 /*yield*/, prompts({
+                    preguntas = [
+                        {
                             type: 'number',
                             name: 'edad',
                             message: 'Puedes darme tu edad?'
-                        })];
-                case 1:
-                    edad = _a.sent();
-                    return [4 /*yield*/, prompts({
+                        },
+                        {
                             type: 'text',
                             name: 'nombre',
                             message: 'Puedes darme tu nombre?'
-                        })];
-                case 2:
-                    nombre = _a.sent();
-                    console.log('Edad', edad.edad);
-                    console.log('Nombre', nombre.nombre);
+                        },
+                        {
+                            type: 'text',
+                            name: 'cedula',
+                            message: 'Puedes darme tu cedula?'
+                        }
+                    ];
+                    return [4 /*yield*/, prompts(preguntas)];
+                case 1:
+                    respuestaEdad = _a.sent();
+                    console.log('Respuesta', respuestaEdad);
                     console.log('Fin');
                     return [2 /*return*/];
             }
