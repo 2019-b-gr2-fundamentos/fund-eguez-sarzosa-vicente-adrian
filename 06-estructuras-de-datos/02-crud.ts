@@ -8,6 +8,9 @@ function main(){
     // npm uninstall -g tsc -> WINDOWS
     // npm uninstall -g typescript -> WINDOWS
     // npm install -g typescript -> WINDOWS
+
+
+    
     // sudo npm uninstall -g tsc -> LINUX O MAC
     // sudo npm install -g typescript -> LINUX O MAC
 
