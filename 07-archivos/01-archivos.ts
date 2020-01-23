@@ -5,7 +5,12 @@ import * as prompts from 'prompts';
 async function main(){
 
     let contador = 1;
-    const arregloEstudiantes: Estudiante[] = [];
+    const contenidoArchivo = leerArchivo(
+        './ejemplo.txt'
+    );
+    console.log('contenidoArchivo', contenidoArchivo);
+    const arregloCargadoDeArchivo = JSON.parse(contenidoArchivo);
+    const arregloEstudiantes: Estudiante[] = arregloCargadoDeArchivo;
     const arregloPreguntas = [
         { 
             type: 'text',
