@@ -23,11 +23,14 @@ async function main(){
         arregloCargadoDeArchivo = JSON
                 .parse(contenidoArchivo);
     } catch(error){
-        arregloCargadoDeArchivo = [];
+        arregloCargadoDeArchivo = [
+            {"id":1,"nombre":"Juanito"},
+            {"id":2,"nombre":"Pepito"}
+        ];
         console.error('Error parseando archivo');
     }
 
-    let contador = 1;
+    let contador = 3;
 
     // OPERADORES
     let minimoId = -1;
