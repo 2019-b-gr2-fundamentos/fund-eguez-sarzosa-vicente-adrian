@@ -94,10 +94,10 @@ function main(){
     const respuestaReduce = arregloEstudiantes
             .reduce(
                 function(acumulador, valorActual, i, arr){ // Funcion
-                    const calculo = acumulador + valorActual.nota;
+                    const calculo = acumulador - valorActual.nota;
                     return calculo;
                 },
-                0 // Valor inicial del acumulador
+                100 // Valor inicial del acumulador
             );
     console.log('respuestaReduce', respuestaReduce);
     console.log('promedio', respuestaReduce / arregloEstudiantes.length);
