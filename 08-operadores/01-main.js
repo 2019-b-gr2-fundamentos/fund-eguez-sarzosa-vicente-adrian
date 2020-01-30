@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var _02_filter_1 = require("./02-filter");
 function main() {
     var arregloEstudiantes = [
         { id: 1, nombre: "Adrian", nota: 7 },
@@ -78,6 +81,14 @@ function main() {
     );
     console.log('respuestaReduce', respuestaReduce);
     console.log('promedio', respuestaReduce / arregloEstudiantes.length);
+    console.log('arregloEstudiantes', arregloEstudiantes);
+    var respuestaFilterNuestro = _02_filter_1.filter(arregloEstudiantes, function (valorActual, i, arr) {
+        console.log('Valor: ', valorActual);
+        console.log('Indice: ', i);
+        console.log('Arreglo: ', arr);
+        return valorActual.nota >= 7;
+    });
+    console.log('respuestaFilterNuestro', respuestaFilterNuestro);
     console.log('arregloEstudiantes', arregloEstudiantes);
 }
 main();
