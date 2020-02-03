@@ -1,4 +1,5 @@
 import { filter } from "./02-filter";
+import { map } from "./03-map";
 
 function main(){
    const arregloEstudiantes = [
@@ -116,6 +117,15 @@ function main(){
         );
     console.log('respuestaFilterNuestro',respuestaFilterNuestro);
     console.log('arregloEstudiantes', arregloEstudiantes);
+
+    const respuestaMapNuestro = map(
+        arregloEstudiantes,
+        function(valorActual, i, arr){
+            delete valorActual.nota
+            return valorActual;
+        }
+    );
+    console.log('respuestaMapNuestro', respuestaMapNuestro);
 
 
 }
